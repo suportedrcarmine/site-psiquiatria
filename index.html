@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seu Nome | Informações Gerais</title>
+  <meta name="description" content="Site simples com informações gerais e contato via WhatsApp." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">S</div>
+        <div class="brand__text">
+          <div class="brand__name">Seu Nome</div>
+          <div class="brand__tag">Informações gerais • Atendimento</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato" class="btn btn--small">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <h1>Um site simples, profissional e direto ao ponto.</h1>
+          <p class="lead">
+            Coloque aqui uma frase curta explicando o que a pessoa encontra no seu site.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#servicos">Ver informações</a>
+            <a class="btn btn--ghost" href="#contato">Falar comigo</a>
+          </div>
+
+          <div class="hero__badges">
+            <span class="badge">Resposta rápida</span>
+            <span class="badge">Conteúdo objetivo</span>
+            <span class="badge">WhatsApp</span>
+          </div>
+        </div>
+
+        <div class="card card--highlight">
+          <h2>Informações principais</h2>
+          <ul class="list">
+            <li><strong>Local:</strong> Cidade/UF</li>
+            <li><strong>Horários:</strong> Seg–Sex, 09–18h</li>
+            <li><strong>Contato:</strong> WhatsApp</li>
+          </ul>
+          <p class="muted">
+            (Você pode trocar isso por qualquer resumo: regras, orientações, perguntas frequentes, etc.)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre</h2>
+        <p>
+          Escreva 4–6 linhas com informações gerais. Sem excesso de detalhes.
+          Objetivo: passar confiança e explicar claramente o propósito do site.
+        </p>
+      </div>
+    </section>
+
+    <section id="servicos" class="section section--alt">
+      <div class="container">
+        <h2>Informações / Serviços</h2>
+        <div class="grid3">
+          <div class="card">
+            <h3>Tópico 1</h3>
+            <p>Descrição breve do tópico 1.</p>
+          </div>
+          <div class="card">
+            <h3>Tópico 2</h3>
+            <p>Descrição breve do tópico 2.</p>
+          </div>
+          <div class="card">
+            <h3>Tópico 3</h3>
+            <p>Descrição breve do tópico 3.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Se preferir, fale direto pelo WhatsApp:</p>
+
+        <a class="btn" id="cta-whatsapp" href="#" target="_blank" rel="noopener">
+          Abrir WhatsApp
+        </a>
+
+        <p class="muted small">
+          Dica: use uma mensagem pronta para facilitar o primeiro contato.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Seu Nome. Todos os direitos reservados.</span>
+      <span class="muted">Feito com HTML + CSS</span>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="wa-float" id="wa-float" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <!-- Ícone em SVG (não depende de nada externo) -->
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M19.11 17.2c-.23-.12-1.36-.67-1.57-.75-.21-.08-.37-.12-.52.12-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.97-.36-1.85-1.14-.68-.61-1.14-1.36-1.27-1.6-.13-.23-.01-.36.1-.48.1-.1.23-.27.35-.4.12-.13.15-.23.23-.38.08-.15.04-.29-.02-.4-.06-.12-.52-1.25-.71-1.71-.18-.44-.37-.38-.52-.39l-.45-.01c-.15 0-.4.06-.6.29-.21.23-.79.77-.79 1.88 0 1.11.81 2.18.92 2.33.12.15 1.6 2.44 3.88 3.42.54.23.96.37 1.29.47.54.17 1.03.15 1.42.09.43-.06 1.36-.56 1.55-1.1.19-.54.19-1.01.13-1.1-.06-.1-.21-.15-.44-.27z"/>
+      <path d="M26.67 5.33C23.83 2.49 20.06.93 16.03.93 7.96.93 1.4 7.49 1.4 15.56c0 2.58.68 5.1 1.98 7.31L1.3 31.07l8.37-2.2c2.13 1.17 4.53 1.78 6.96 1.78h.01c8.07 0 14.63-6.56 14.63-14.63 0-4.03-1.57-7.8-4.6-10.69zm-10.03 23.2h-.01c-2.2 0-4.36-.59-6.24-1.71l-.45-.27-4.97 1.31 1.33-4.84-.29-.5c-1.22-2.01-1.86-4.32-1.86-6.67C4.15 8.84 9.32 3.67 16.03 3.67c3.36 0 6.52 1.31 8.9 3.69 2.38 2.38 3.69 5.54 3.69 8.9 0 6.71-5.27 12.27-11.98 12.27z"/>
+    </svg>
+  </a>
+
+  <script>
+    // 1) Configure aqui seu WhatsApp (DDD + número, só dígitos)
+    const phone = "5522999999999"; // exemplo: 55 + DDD + número
+    const message = "Olá! Gostaria de mais informações.";
+
+    const waLink = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    document.getElementById("wa-float").href = waLink;
+    document.getElementById("cta-whatsapp").href = waLink;
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
