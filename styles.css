@@ -573,3 +573,22 @@ details p{
     flex-direction: column;
   }
 }
+
+
+/* Ícones em SVG */
+.mini-icon{
+  width:34px;
+  height:34px;
+  flex:0 0 auto;
+}
+.service-icon img{
+  width:52px;
+  height:52px;
+  display:block;
+  margin:0 auto 14px;
+}
+.cta__icon{
+  width:54px;
+  height:54px;
+  flex:0 0 auto;
+}
