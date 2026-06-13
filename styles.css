@@ -57,15 +57,25 @@ a{
 }
 
 .brand{
-  display: inline-flex;
-  align-items: center;
+    display:flex;
+    align-items:center;
+    gap:16px;
 }
 
 .brand__logo{
-  width: 178px;
-  max-height: 64px;
-  object-fit: contain;
-  display: block;
+    width:60px;
+}
+
+.brand__title{
+    font-size:34px;
+}
+
+.brand__subtitle{
+    font-size:16px;
+}
+
+.brand__tagline{
+    font-size:11px;
 }
 
 .nav{
