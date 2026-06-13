@@ -345,12 +345,12 @@ h3{
 }
 
 .info-card p{
-  margin: 18px 0 0;
-  padding: 12px 14px;
-  border-radius: 10px;
-  background: var(--blue-soft);
-  color: var(--navy);
-  font-weight: 600;
+  margin-top:20px;
+  padding:16px;
+  background:#EEF3F8;
+  border-radius:12px;
+  color:#0D2B4E;
+  font-weight:500;
 }
 
 /* SEÇÕES */
