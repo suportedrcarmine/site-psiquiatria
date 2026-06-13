@@ -3,122 +3,224 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dra.Elena | Psiquiatria</title>
-  <meta name="description" content="Site simples com informações gerais e contato via WhatsApp." />
+  <title>Recanto da Mente | Psiquiatria</title>
+  <meta name="description" content="Atendimento psiquiátrico humanizado, online e presencial, com acolhimento, ciência e cuidado individualizado." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="topbar">
     <div class="container topbar__inner">
-      <div class="brand">
-        <div class="brand__logo" aria-hidden="true">S</div>
-        <div class="brand__text">
-          <div class="brand__name">Dra.Elena | Psiquiatria</div>
-          <div class="brand__tag">Informações gerais • Atendimento</div>
-        </div>
-      </div>
+      <a class="brand" href="#inicio" aria-label="Recanto da Mente">
+        <img src="img/logo-recanto.jpeg" alt="Recanto da Mente" class="brand__logo" />
+      </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#inicio" class="active">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
-        <a href="#contato" class="btn btn--small">Contato</a>
+        <a href="#abordagens">Abordagens</a>
+        <a href="#faq">Perguntas Frequentes</a>
+        <a href="#contato">Contato</a>
       </nav>
+
+      <a class="btn btn--whats btn--top" id="wa-top" href="#" target="_blank" rel="noopener">
+        Fale comigo no WhatsApp
+      </a>
     </div>
   </header>
 
-  <main>
+  <main id="inicio">
     <section class="hero">
       <div class="container hero__grid">
-        <div>
-          <h1>Você não precisa atravessar isso sozinho.</h1>
+        <div class="hero__content">
+          <span class="eyebrow">Psiquiatria com acolhimento e responsabilidade</span>
+          <h1>Cuidado que acolhe.<br>Ciência que transforma.</h1>
+          <div class="gold-line"></div>
+
           <p class="lead">
-            A cura começa quando alguém te escuta de verdade. Um espaço seguro para entender, tratar e recomeçar.
+            Atendimento psiquiátrico humanizado e baseado em evidências para promover saúde mental,
+            bem-estar e qualidade de vida.
           </p>
 
           <div class="hero__actions">
-            <a class="btn" href="#servicos">Ver mais informações</a>
-            <a class="btn btn--ghost" href="#contato">Fale conosco</a>
+            <a class="btn" href="#contato">Agendar consulta</a>
+            <a class="btn btn--ghost" id="wa-hero" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
           </div>
 
-          <div class="hero__badges">
-            <span class="badge">Marque uma consulta</span>
-            <span class="badge">Tire suas dúvidas</span>
-            <span class="badge">WhatsApp</span>
+          <div class="trust-row">
+            <div class="trust-item">
+              <span class="icon">✓</span>
+              <span>Atendimento seguro<br>e confidencial</span>
+            </div>
+            <div class="trust-item">
+              <span class="icon">◌</span>
+              <span>Cuidado individualizado<br>e humanizado</span>
+            </div>
+            <div class="trust-item">
+              <span class="icon">✦</span>
+              <span>Formação sólida e<br>atualização contínua</span>
+            </div>
           </div>
         </div>
 
-        <div class="card card--highlight">
-          <h2>Informações principais</h2>
-          <ul class="list">
-            <li><strong>Local:</strong> Online, Niterói, Nova Friburgo, Cabo Frio</li>
-            <li><strong>Horários:</strong> Seg–Sab, apenas com hora marcada</li>
-            <li><strong>Contato:</strong> WhatsApp (21)995726249</li>
-          </ul>
-          <p class="muted">
-            Confira mais informações abaixo.
-          </p>
+        <div class="hero__visual">
+          <div class="visual-card">
+            <img src="img/logo-recanto.jpeg" alt="Logo Recanto da Mente" />
+          </div>
+
+          <div class="info-card">
+            <h2>Informações principais</h2>
+            <ul>
+              <li><strong>Local:</strong> Online, Niterói, Nova Friburgo, Cabo Frio</li>
+              <li><strong>Horários:</strong> Seg–Sab, apenas com hora marcada</li>
+              <li><strong>Contato:</strong> WhatsApp (21) 99572-6249</li>
+            </ul>
+            <p>Seu bem-estar é prioridade. Vamos conversar?</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="sobre" class="section">
-      <div class="container">
-        <h2>Sobre</h2>
-        <p>
-          A Dra. Elena é médica formada pela Universidade Federal Fluminense (UFF), com especialização em Psiquiatria e atuação dedicada ao cuidado integral da saúde mental.
-Seu trabalho une escuta sensível, rigor científico e atenção individualizada, oferecendo diagnóstico preciso e tratamento responsável.
-O propósito deste espaço é proporcionar acolhimento, clareza e segurança para que cada pessoa possa atravessar seus desafios com suporte médico qualificado e respeito à sua singularidade.
-        </p>
-      </div>
-    </section>
+      <div class="container split">
+        <div>
+          <span class="section-kicker">Sobre</span>
+          <h2>Quem é a Dra. Elena</h2>
+          <div class="small-line"></div>
+          <p>
+            A Dra. Elena é médica formada pela Universidade Federal Fluminense (UFF), com especialização em Psiquiatria
+            e atuação dedicada ao cuidado integral da saúde mental. Seu trabalho une escuta sensível, rigor científico
+            e atenção individualizada, oferecendo diagnóstico preciso e tratamento responsável.
+          </p>
+          <p>
+            O propósito deste espaço é proporcionar acolhimento, clareza e segurança para que cada pessoa possa
+            atravessar seus desafios com suporte médico qualificado e respeito à sua singularidade.
+          </p>
+          <a class="btn btn--outline" href="#contato">Saiba mais sobre o atendimento</a>
+        </div>
 
-    <section id="servicos" class="section section--alt">
-      <div class="container">
-        <h2>Informações / Serviços</h2>
-        <div class="grid3">
-          <div class="card">
-            <h3>QUERO SER ATENDIDO PRESENCIALMENTE</h3>
-            <p>Atendimentos presenciais são realizados em clínicas parceiras e em consultório, entre em contato conosco para saber mais detalhes sobre onde encontrar a dra.Elena.</p>
-          </div>
-          <div class="card">
-            <h3>QUERO SER ATENDIDO ONLINE</h3>
-            <p>Atualmente oferecemos um serviço de teleatendimento com consultas online. Uma agenda flexível com diversa opções de horário. Ideal para pacientes que não podem ou não desejam sair de casa; e para tratamento de continuidade em múltiplas sessões.</p>
-          </div>
-          <div class="card">
-            <h3>QUERO SER ATENDIDO EM CASA</h3>
-            <p>A dra.Elena faz atendimentos eletivos à domicílio nas cidades de Niterói e Nova Friburgo, no RJ. Mande uma mensagem para saber quais áreas nessas cidades são atendidas e se aquilo que você precisa se enquadra nessa modalidade.</p>
+        <div id="servicos">
+          <span class="section-kicker">Como posso te ajudar</span>
+          <h2>Serviços</h2>
+          <div class="small-line"></div>
+
+          <div class="cards-grid">
+            <article class="service-card">
+              <div class="service-icon">☾</div>
+              <h3>Atendimento online</h3>
+              <p>Consulta por teleatendimento, com flexibilidade de horários e acompanhamento seguro.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">⌂</div>
+              <h3>Atendimento presencial</h3>
+              <p>Atendimentos presenciais em clínicas parceiras e consultório, mediante agendamento.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">⌁</div>
+              <h3>Atendimento domiciliar</h3>
+              <p>Atendimento eletivo em domicílio em áreas selecionadas de Niterói e Nova Friburgo.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">✧</div>
+              <h3>Acompanhamento contínuo</h3>
+              <p>Seguimento individualizado para ajuste terapêutico, prevenção de recaídas e qualidade de vida.</p>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contato" class="section">
+    <section id="abordagens" class="section section--soft">
       <div class="container">
-        <h2>Contato</h2>
-        <p>Fale direto pelo WhatsApp:</p>
+        <span class="section-kicker">Abordagens</span>
+        <h2>Principais áreas de cuidado</h2>
+        <div class="small-line"></div>
 
-        <a class="btn" id="cta-whatsapp" href="#" target="_blank" rel="noopener">
-          Abrir WhatsApp
-        </a>
+        <div class="cards-grid cards-grid--four">
+          <article class="service-card">
+            <div class="service-icon">◎</div>
+            <h3>Ansiedade</h3>
+            <p>Avaliação e tratamento de ansiedade, pânico, preocupações excessivas e estresse.</p>
+          </article>
 
-        <p class="muted small">
-          Dica: use uma mensagem pronta para facilitar o primeiro contato.
-        </p>
+          <article class="service-card">
+            <div class="service-icon">◐</div>
+            <h3>Transtornos do humor</h3>
+            <p>Acompanhamento para depressão, bipolaridade e oscilações de humor.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">✿</div>
+            <h3>Saúde mental da mulher</h3>
+            <p>Atenção especializada em fases como TPM, gravidez, puerpério e climatério.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">◍</div>
+            <h3>TDAH e outros quadros</h3>
+            <p>Diagnóstico e tratamento de TDAH, insônia, transtornos alimentares e outros quadros psiquiátricos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container faq">
+        <div>
+          <span class="section-kicker">Perguntas frequentes</span>
+          <h2>Dúvidas comuns</h2>
+          <div class="small-line"></div>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>Como funciona o primeiro contato?</summary>
+            <p>Você pode enviar uma mensagem pelo WhatsApp para receber orientações sobre agenda, modalidade de atendimento e próximos passos.</p>
+          </details>
+          <details>
+            <summary>Há atendimento online?</summary>
+            <p>Sim. O atendimento online é realizado mediante agendamento e pode ser uma boa opção para acompanhamento de continuidade.</p>
+          </details>
+          <details>
+            <summary>O atendimento é por ordem de chegada?</summary>
+            <p>Não. Os atendimentos são realizados apenas com horário marcado.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <div>
+            <h2>Vamos cuidar da sua saúde mental?</h2>
+            <p>Agende sua consulta de forma prática e segura.</p>
+          </div>
+          <a class="btn btn--gold" id="cta-whatsapp" href="#" target="_blank" rel="noopener">
+            Agendar pelo WhatsApp
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span id="year"></span> DraElena. Todos os direitos reservados.</span>
-      <span class="muted">Feito com HTML + CSS</span>
+      <span>© <span id="year"></span> Recanto da Mente. Todos os direitos reservados.</span>
+      <span>HTML + CSS • GitHub Pages</span>
     </div>
   </footer>
 
-  <!-- Botão flutuante WhatsApp -->
   <a class="wa-float" id="wa-float" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-    <!-- Ícone em SVG (não depende de nada externo) -->
     <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
       <path d="M19.11 17.2c-.23-.12-1.36-.67-1.57-.75-.21-.08-.37-.12-.52.12-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.97-.36-1.85-1.14-.68-.61-1.14-1.36-1.27-1.6-.13-.23-.01-.36.1-.48.1-.1.23-.27.35-.4.12-.13.15-.23.23-.38.08-.15.04-.29-.02-.4-.06-.12-.52-1.25-.71-1.71-.18-.44-.37-.38-.52-.39l-.45-.01c-.15 0-.4.06-.6.29-.21.23-.79.77-.79 1.88 0 1.11.81 2.18.92 2.33.12.15 1.6 2.44 3.88 3.42.54.23.96.37 1.29.47.54.17 1.03.15 1.42.09.43-.06 1.36-.56 1.55-1.1.19-.54.19-1.01.13-1.1-.06-.1-.21-.15-.44-.27z"/>
       <path d="M26.67 5.33C23.83 2.49 20.06.93 16.03.93 7.96.93 1.4 7.49 1.4 15.56c0 2.58.68 5.1 1.98 7.31L1.3 31.07l8.37-2.2c2.13 1.17 4.53 1.78 6.96 1.78h.01c8.07 0 14.63-6.56 14.63-14.63 0-4.03-1.57-7.8-4.6-10.69zm-10.03 23.2h-.01c-2.2 0-4.36-.59-6.24-1.71l-.45-.27-4.97 1.31 1.33-4.84-.29-.5c-1.22-2.01-1.86-4.32-1.86-6.67C4.15 8.84 9.32 3.67 16.03 3.67c3.36 0 6.52 1.31 8.9 3.69 2.38 2.38 3.69 5.54 3.69 8.9 0 6.71-5.27 12.27-11.98 12.27z"/>
@@ -126,17 +228,16 @@ O propósito deste espaço é proporcionar acolhimento, clareza e segurança par
   </a>
 
   <script>
-    // 1) Configure aqui seu WhatsApp (DDD + número, só dígitos)
-    const phone = "5521995726249"; // exemplo: 55 + DDD + número
-    const message = "Olá! Gostaria de mais informações.";
-
+    const phone = "5521995726249";
+    const message = "Olá! Gostaria de agendar uma consulta.";
     const waLink = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-    document.getElementById("wa-float").href = waLink;
-    document.getElementById("cta-whatsapp").href = waLink;
+
+    ["wa-top", "wa-hero", "cta-whatsapp", "wa-float"].forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) element.href = waLink;
+    });
 
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
-
