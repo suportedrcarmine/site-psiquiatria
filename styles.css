@@ -268,7 +268,11 @@ h3{
   font-size: 13px;
   font-weight: 800;
 }
-
+.trust-item .mini-icon{
+  width:34px;
+  height:34px;
+  object-fit:contain;
+}
 .icon{
   width: 36px;
   height: 36px;
@@ -360,7 +364,15 @@ p{
   transform: translateY(-3px);
   box-shadow: var(--shadow);
 }
-
+.service-icon{
+  width:64px;
+  height:64px;
+  display:grid;
+  place-items:center;
+  border:2px solid rgba(201,154,46,.55);
+  border-radius:16px;
+  margin-bottom:18px;
+}
 .service-icon img{
   width:46px;
   height:46px;
@@ -606,9 +618,19 @@ details p{
   height:34px;
   flex:0 0 auto;
 }
+  .service-icon{
+  width:64px;
+  height:64px;
+  display:grid;
+  place-items:center;
+  border:2px solid rgba(201,154,46,.55);
+  border-radius:16px;
+  margin-bottom:18px;
+}
 .service-icon img{
   width:46px;
   height:46px;
+  object-fit:contain;
   display:block;
   margin:0;
 }
