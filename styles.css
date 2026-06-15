@@ -627,7 +627,7 @@ details p{
 /* imagem direita */
 .hero__visual{
   display:flex;
-  justify-content:flex-end;
+  justify-content:center;
   align-items:center;
   min-height:420px;
 }
@@ -638,7 +638,17 @@ details p{
   opacity:.72;
   display:block;
 }
+.hero__image{
+    width:100%;
+    max-width:430px;
+display:block;
+    border-radius:28px;
+  border:6px solid rgba(255,255,255,.8);
+    box-shadow:0 25px 60px rgba(13,43,78,.12);  
 
+    object-fit:cover;
+   
+}
 @media (max-width: 980px){
   .hero__visual{
     min-height:auto;
