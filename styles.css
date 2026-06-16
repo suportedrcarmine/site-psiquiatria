@@ -373,8 +373,23 @@ p{
 .faq-header{
   max-width:880px;
   margin:0 auto 34px;
-  text-align:left;
+  text-align:left !important;
 }
+
+.faq-header .section-kicker{
+  display:block;
+  text-align:left !important;
+}
+
+.faq-header h2{
+  text-align:left !important;
+}
+
+.faq-header .small-line{
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
 
 
 .faq-list{
