@@ -370,15 +370,27 @@ p{
 
 /* FAQ */
 
-.faq{
-  display:grid;
-  grid-template-columns:.8fr 1.2fr;
-  gap:40px;
+.faq-header{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 34px;
+}
+
+.faq-header .small-line{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.faq-list{
+  max-width:880px;
+  margin:0 auto;
 }
 
 .faq-list{
   display:grid;
   gap:12px;
+    max-width:880px;
+  margin:0 auto;
 }
 
 details{
@@ -501,8 +513,7 @@ details p{
   }
 
   .hero__grid,
-  .split,
-  .faq{
+  .split{
     grid-template-columns:1fr;
   }
 
