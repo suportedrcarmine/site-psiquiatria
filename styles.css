@@ -708,3 +708,53 @@ details p{
   }
 
 }
+@media (max-width:640px){
+  .topbar__inner{
+    display:grid !important;
+    grid-template-columns:minmax(0, 1fr) auto !important;
+    align-items:center !important;
+    column-gap:8px !important;
+  }
+
+  .brand{
+    min-width:0 !important;
+    gap:8px !important;
+  }
+
+  .brand__logo{
+    width:44px !important;
+  }
+
+  .brand__title{
+    font-size:20px !important;
+  }
+
+  .brand__subtitle{
+    font-size:9px !important;
+    letter-spacing:2px !important;
+  }
+
+  .brand__tagline{
+    font-size:7px !important;
+    letter-spacing:2px !important;
+  }
+
+  .btn--top{
+    display:inline-flex !important;
+    min-height:34px !important;
+    padding:7px 10px !important;
+    font-size:0 !important;
+    border-radius:10px !important;
+    white-space:nowrap !important;
+  }
+
+  .btn--top::after{
+    content:"WhatsApp";
+    font-size:11px;
+    font-weight:800;
+  }
+
+  .nav{
+    grid-column:1 / -1 !important;
+  }
+}
