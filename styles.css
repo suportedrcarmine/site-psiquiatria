@@ -371,15 +371,12 @@ p{
 /* FAQ */
 
 .faq-header{
-  max-width:880px;
-  margin:0 0 34px;
-}
-
-.faq-header .section-kicker{
-  display:block;
+  width:min(880px, 100%);
+  margin:0 0 34px !important;
   text-align:left !important;
 }
 
+.faq-header .section-kicker,
 .faq-header h2{
   text-align:left !important;
 }
@@ -389,13 +386,11 @@ p{
   margin-right:0 !important;
 }
 
-
-
 .faq-list{
   display:grid;
   gap:12px;
-    max-width:880px;
-  margin:0;
+  width:min(880px, 100%);
+  margin:0 !important;
 }
 
 details{
