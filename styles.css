@@ -582,8 +582,33 @@ details p{
     letter-spacing:3px;
   }
 
+.topbar__inner{
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:center;
+    gap:12px;
+  }
+
+  .brand{
+    grid-column:1;
+  }
+
   .btn--top{
-    display:none;
+    grid-column:2;
+    display:inline-flex;
+    min-height:38px;
+    padding:8px 12px;
+    font-size:0;
+    border-radius:12px;
+  }
+
+  .btn--top::after{
+    content:"WhatsApp";
+    font-size:12px;
+  }
+
+  .nav{
+    grid-column:1 / -1;
   }
 
   .hero{
@@ -668,4 +693,18 @@ details p{
     grid-column:2 !important;
     display:block !important;
   }
+}
+@media (min-width:641px) and (max-width:980px){
+
+  .topbar__inner{
+    justify-content:flex-start;
+    gap:28px;
+  }
+
+  .btn--top{
+    margin-left:auto;
+    min-height:42px;
+    padding:10px 18px;
+  }
+
 }
