@@ -630,3 +630,31 @@ details p{
     flex-direction:column;
   }
 }
+
+@media (max-width:640px){
+  .trust-row{
+    display:grid !important;
+    grid-template-columns:repeat(3, 1fr) !important;
+    gap:10px !important;
+  }
+
+  .trust-row .trust-item{
+    display:grid !important;
+    grid-template-columns:24px 1fr !important;
+    align-items:start !important;
+    text-align:left !important;
+    column-gap:6px !important;
+  }
+
+  .trust-row .trust-item .mini-icon{
+    width:24px !important;
+    height:24px !important;
+    min-width:24px !important;
+    grid-column:1 !important;
+  }
+
+  .trust-row .trust-item span{
+    grid-column:2 !important;
+    display:block !important;
+  }
+}
