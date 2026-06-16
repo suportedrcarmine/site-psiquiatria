@@ -372,7 +372,7 @@ p{
 
 .faq-header{
   max-width:880px;
-  margin:0 auto 34px;
+  margin:0 0 34px;
   text-align:left !important;
 }
 
@@ -396,7 +396,7 @@ p{
   display:grid;
   gap:12px;
     max-width:880px;
-  margin:0 auto;
+  margin:0;
 }
 
 details{
