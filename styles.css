@@ -350,14 +350,14 @@ p{
   height:64px;
   display:grid;
   place-items:center;
-  border:none;
-  border-radius:0;
+  border:2px solid rgba(201,154,46,.55);
+  border-radius:16px;
   margin-bottom:18px;
 }
 
 .service-icon img{
-  width:64px;
-  height:64px;
+  width:46px;
+  height:46px;
   object-fit:contain;
 }
 
