@@ -350,17 +350,15 @@ p{
   height:64px;
   display:grid;
   place-items:center;
-  border:2px solid rgba(201,154,46,.55);
-  border-radius:16px;
+  border:none;
+  border-radius:0;
   margin-bottom:18px;
 }
 
 .service-icon img{
-  width:46px;
-  height:46px;
+  width:64px;
+  height:64px;
   object-fit:contain;
-  display:block;
-  margin:0;
 }
 
 .service-card p{
